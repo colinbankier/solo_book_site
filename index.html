@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>The Solo Book - Man of Iron, Ship of Steel</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -21,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link href="jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
     <style>
       body {
         background-image: url(assets/images/background.jpg);
@@ -53,16 +54,40 @@
       }
       .header p {
         font-size: 2em;
-        color: rgb(158, 158, 158);
+        color: rgb(200, 200, 200);
       }
-      .ship-of-steel {
+      h1.ship-of-steel {
         margin-left: 50px;
+        color: rgb(239, 239, 239);
+      }
+      h1.man-of-iron {
+        color: rgb(124, 124, 124);
+      }
+      .blurbs {
+        height: 120px;
+        font-size: 1.15em;
+      }
+      .readable, .blog-main p, .sidebar-module p {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        margin: 0;
+      }
+      .blog-sidebar {
+        margin: 0;
       }
     </style>
   </head>
 
   <body>
-
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+    </div>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -72,7 +97,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">The Solo Book</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -100,21 +125,58 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="readable blurbs">
+            <p>“Kevin’s meticulous research of Solo’s entire history is exceptional.”</p>
+            <p class="quoter">Sir James Hardy OBE</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="readable blurbs">
+            <p>"Few yachts in the world could match Solo's career as racer, cruiser and Antarctic explorer."</p>
+            <p>Jock Sturrock</p>
+          </div>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="readable blurbs">
+            <p>Another quote of sorts</p>
+            <p>Someone else</p>
+          </div>
         </div>
       </div>
+      <hr>
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+          <p>
+            Vic Meyer, man of iron; iron by trade and iron by temperament, was the owner, builder and skipper of Solo. She arrived on the Sydney ocean yacht racing scene in 1955 like a runaway train, winning every major ocean race in Australia. Not only first yacht across the line but also on handicap, testimony to both the skills of Alan Payne her designer and her hard driving skipper. 
+          </p>
+          <p>
+When Vic tired of racing he took himself cruising and in the twelve years to 1975 he crossed the world’s oceans several times, having all sorts of adventures and grabbing the headlines with his penchant for female crews. You can read the first- hand account of these cruises by most of the girls who ‘walked the plank’ to experience life at sea under Vic!
+          </p>
+          <p>
+The Ship of Steel didn’t stop there but went on and safely bore a bunch of scientists to the Antarctic and back before being put to work to earn her keep taking tourists sailing in the Whitsundays and later in Moreton Bay.
+          </p>
+          <p>
+Painstakingly researched by Kevin the book is a comprehensive account of the almost 60 year history of Solo and includes a large range of pictures and factual records.
+          </p>
+          <div id="links">
+    <a href="assets/images/rusty.png" title="Rusty">
+        <img src="assets/images/rusty.png" alt="Rusty">
+    </a>
+    <a href="assets/images/shiny.png" title="Shiny">
+        <img src="assets/images/shiny.png" alt="Shiny">
+    </a>
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <p>
+              G’Day, and welcome to the Solo book web page. I have tried to provide as much information below which may help you decide if you would like to buy it. I hope you enjoy setting sail on the 60 year voyage that is my book!
+          </p>
+          <p>Cheers…</p>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
 
       <hr>
 
@@ -137,5 +199,16 @@
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/blueimp-gallery.min.js"></script>
+    <script>
+      document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+      };
+    </script>
   </body>
 </html>
