@@ -35,19 +35,6 @@
         background-clip: initial;
         background-color: rgb(255, 255, 255);
       }
-
-      div.jumbotron {
-        background-image: url(assets/images/background.jpg);
-        background-position-x: 50%;
-        background-position-y: 0%;
-        background-size: initial;
-        background-repeat-x: no-repeat;
-        background-repeat-y: no-repeat;
-        background-attachment: fixed;
-        background-origin: initial;
-        background-clip: initial;
-        background-color: rgb(255, 255, 255);
-      }
       .header h1 {
         font-size: 5em;
         color: rgb(214, 214, 214);
@@ -67,13 +54,19 @@
         height: 120px;
         font-size: 1.15em;
       }
-      .readable, .blog-main p, .sidebar-module p {
+      .readable, .blog-main p, .sidebar-module {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         margin: 0;
       }
+      .sidebar-module {
+        margin-bottom: 15px;
+      }
       .blog-sidebar {
         margin: 0;
+      }
+      .img-signature {
+        display: block;
       }
     </style>
   </head>
@@ -173,7 +166,13 @@ Painstakingly researched by Kevin the book is a comprehensive account of the alm
             <p>
               G’Day, and welcome to the Solo book web page. I have tried to provide as much information below which may help you decide if you would like to buy it. I hope you enjoy setting sail on the 60 year voyage that is my book!
           </p>
-          <p>Cheers…</p>
+          <p>Cheers…<img class="img-signature" src="assets/images/signature.png" alt="Kevin Bourke"/></p>
+          </div>
+          <div class="sidebar-module sidebar-module-inset">
+            <p>
+              <h1>Buy Now</h1>
+              <h1>$59.95</h1>
+            </p>
           </div>
         </div><!-- /.blog-sidebar -->
       </div><!-- /.row -->
