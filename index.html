@@ -35,6 +35,11 @@
         background-clip: initial;
         background-color: rgb(255, 255, 255);
       }
+      div.cover {
+        background-color: #2a3e92;
+        margin-bottom: 15px;
+        text-align: center;
+      }
       .header h1 {
         font-size: 5em;
         color: rgb(214, 214, 214);
@@ -51,8 +56,11 @@
         color: rgb(124, 124, 124);
       }
       .blurbs {
-        height: 120px;
-        font-size: 1.15em;
+        height: 130px;
+        font-size: 1.3em;
+      }
+      p.quote {
+        font-style: italic;
       }
       .readable, .blog-main p, .sidebar-module {
         background-color: rgba(255, 255, 255, 0.8);
@@ -67,6 +75,14 @@
       }
       .img-signature {
         display: block;
+      }
+      #links {
+        text-align: center;
+      }
+      #links img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
       }
     </style>
   </head>
@@ -108,31 +124,29 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="header container">
-        <h1 class="man-of-iron">MAN OF IRON</h1>
-        <h1 class="ship-of-steel">SHIP OF STEEL</h1>
-        <p>The story of Vic Meyer and Solo</p>
-        <p>Kevin Bourke</p>
+        <div class="cover">
+          <img src="assets/images/cover.jpg" alt="Man of Iron, Ship of Steel"/>
+        </div>
       </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
+      <div class="container"> <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <div class="readable blurbs">
-            <p>“Kevin’s meticulous research of Solo’s entire history is exceptional.”</p>
+            <p class="quote" >“Kevin’s meticulous research of Solo’s entire history is exceptional.”</p>
             <p class="quoter">Sir James Hardy OBE</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="readable blurbs">
-            <p>"Few yachts in the world could match Solo's career as racer, cruiser and Antarctic explorer."</p>
-            <p>Jock Sturrock</p>
+            <p class="quote">"Few yachts in the world could match Solo's career as racer, cruiser and Antarctic explorer."</p>
+            <p class="quoter">Jock Sturrock</p>
           </div>
        </div>
         <div class="col-md-4">
           <div class="readable blurbs">
-            <p>Another quote of sorts</p>
-            <p>Someone else</p>
+            <p class="quote">Another quote of sorts</p>
+            <p class="quoter">Someone else</p>
           </div>
         </div>
       </div>
@@ -153,11 +167,29 @@ The Ship of Steel didn’t stop there but went on and safely bore a bunch of sci
 Painstakingly researched by Kevin the book is a comprehensive account of the almost 60 year history of Solo and includes a large range of pictures and factual records.
           </p>
           <div id="links">
-    <a href="assets/images/rusty.png" title="Rusty">
-        <img src="assets/images/rusty.png" alt="Rusty">
+    <a href="assets/images/contents_fullsize.jpg" title="Table of Contents">
+        <img src="assets/images/contents_200x200.jpg" alt="Table of Contents">
     </a>
-    <a href="assets/images/shiny.png" title="Shiny">
-        <img src="assets/images/shiny.png" alt="Shiny">
+    <a href="assets/images/ice_fullsize.jpg" title="Solo in Antarctica">
+        <img src="assets/images/ice_200x200.jpg" alt="Solo in Antarctica">
+    </a>
+    <a href="assets/images/morea_fullsize.jpg" title="Solo in the Pacific">
+        <img src="assets/images/morea_200x200.jpg" alt="Solo in the Pacific">
+    </a>
+    <a href="assets/images/sunset_fullsize.jpg" title="Solo in the Sunset">
+        <img src="assets/images/sunset_200x200.jpg" alt="Solo in the Sunset">
+    </a>
+    <a href="assets/images/mary_vic_allison_fullsize.jpg" title="Vic and some of the girls">
+        <img src="assets/images/mary_vic_allison_200x200.jpg" alt="Vic and some of the girls">
+    </a>
+    <a href="assets/images/bay_fullsize.jpg" title="Solo in the Pacific">
+        <img src="assets/images/bay_200x200.jpg" alt="Solo in the Pacific">
+    </a>
+    <a href="assets/images/tied_up_fullsize.jpg" title="Tied up">
+        <img src="assets/images/tied_up_200x200.jpg" alt="Tied up">
+    </a>
+    <a href="assets/images/beached_fullsize.jpg" title="Beached">
+        <img src="assets/images/beached_200x200.jpg" alt="Beached">
     </a>
 </div>
         </div><!-- /.blog-main -->
