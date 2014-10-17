@@ -62,7 +62,7 @@
       p.quote {
         font-style: italic;
       }
-      .readable, .blog-main p, .sidebar-module {
+      .readable, .sidebar-module {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         margin: 0;
@@ -110,13 +110,6 @@
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -153,7 +146,8 @@
       <hr>
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-8 blog-main readable">
+          <h2>Man of Iron, Ship of Steel</h2>
           <p>
             Vic Meyer, man of iron; iron by trade and iron by temperament, was the owner, builder and skipper of Solo. She arrived on the Sydney ocean yacht racing scene in 1955 like a runaway train, winning every major ocean race in Australia. Not only first yacht across the line but also on handicap, testimony to both the skills of Alan Payne her designer and her hard driving skipper. 
           </p>
@@ -166,6 +160,7 @@ The Ship of Steel didn’t stop there but went on and safely bore a bunch of sci
           <p>
 Painstakingly researched by Kevin the book is a comprehensive account of the almost 60 year history of Solo and includes a large range of pictures and factual records.
           </p>
+            <h2>Sample Images From the Book</h2>
           <div id="links">
     <a href="assets/images/contents_fullsize.jpg" title="Table of Contents">
         <img src="assets/images/contents_200x200.jpg" alt="Table of Contents">
@@ -201,10 +196,18 @@ Painstakingly researched by Kevin the book is a comprehensive account of the alm
           <p>Cheers…<img class="img-signature" src="assets/images/signature.png" alt="Kevin Bourke"/></p>
           </div>
           <div class="sidebar-module sidebar-module-inset">
-            <p>
-              <h1>Buy Now</h1>
-              <h1>$59.95</h1>
-            </p>
+            <h1>Pre-order Now</h1>
+            <h1>$59.95</h1>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="DG77FQ8K72RB2">
+<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+            <p>plus $14.95 postage anywhere within Australia</p>
+            <p>Expected 11 Nov 2014</p>
+            <p>Overseas orders please <a href="mailto:kevin@solobook.com.au">contact us</a> for shipping prices.</p>
           </div>
         </div><!-- /.blog-sidebar -->
       </div><!-- /.row -->
