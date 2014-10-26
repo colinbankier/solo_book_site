@@ -2,7 +2,7 @@
 
 original_path="/Users/colin.bankier/Documents/Solo Webstuff/originals"
 
-for image in under_sail.jpg bay.jpg beached.tif tied_up.tif sunset.jpg book.tif contents.jpg ice.tif mary_vic_allison.tif morea.tif vic.jpg;
+for image in under_sail.jpg bay.jpg beached.tif tied_up.tif sunset.jpg book_2.jpg contents.jpg ice.tif mary_vic_allison.tif morea.tif vic.jpg;
 do
   voffset=0
   ext=jpg
@@ -10,10 +10,17 @@ do
   if [ $filename = "under_sail" ]; then
     voffset=60
   fi
+  if [ $filename = "book_2" ]; then
+    crop="-crop 180x180+0+0\! -background white -flatten"
+  else
+      crop="-extent 200x200+0+$voffset"
+  fi
   echo $filename
   echo "voffset $voffset"
   convert -define jpeg:size=200x200 "$original_path/${image}" -strip -thumbnail '200x200^' \
-    -gravity center -extent 200x200+0+$voffset -quality 60 assets/images/${filename}_200x200.jpg
+    -gravity center $crop -quality 60 assets/images/${filename}_200x200.jpg
+
+  #convert -define jpeg:size=200x200 "$original_path/book_2.jpg" -thumbnail '180x180^' -gravity center  -crop 180x180+0+0\! -background white -flatten assets/images/book_200x200.jpg
 
   convert "$original_path/${image}" -resize 1200 -strip -format jpeg\
   -quality 60 assets/images/${filename}_fullsize.jpg
